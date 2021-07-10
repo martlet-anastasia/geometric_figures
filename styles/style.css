@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.figure {
+    width: 1000px;
+    height: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.figure__main-square {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 25%;
+    background-color: #00a2ff;
+}
+
+.figure__main-square:hover {
+    background: #28B463;
+    z-index: 4;
+}
+
+.figure__small-square {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    z-index: 3;
+    top: 37.5%;
+    left: 37.5%;
+    border-radius: 5%;
+    background-color: #f8ba00;
+}
+
+.figure__circle {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #ee220c;
+}
+
+.figure__circle--top-left {
+    top: 12.5%;
+    left: 12.5%;
+}
+
+.figure__circle--top-right {
+    top: 12.5%;
+    right: 12.5%;
+}
+
+.figure__circle--bottom-left {
+    bottom: 12.5%;
+    left: 12.5%;
+}
+
+.figure__circle--bottom-right {
+    bottom: 12.5%;
+    right: 12.5%;
+}
+
+.figure__circle--top-left:hover {
+    background: #FFC300;
+    z-index: 3;
+}
+
+.figure__circle--top-right:hover {
+    background: #FF5733;
+    z-index: 3;
+}
+
+.figure__circle--bottom-right:hover {
+    background: #C70039;
+    z-index: 3;
+}
+
+.figure__circle--bottom-left:hover {
+    background: #581845;
+    z-index: 3;
+}
